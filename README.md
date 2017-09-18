@@ -1,23 +1,27 @@
-# eslint-config-smagrassi [![Build Status](https://travis-ci.org/StefanoMagrassi/eslint-config-smagrassi.svg?branch=master)](https://travis-ci.org/StefanoMagrassi/eslint-config-smagrassi)
+# eslint-config-contactlab
 
-Personal ESLint extensible and sharable configuration.
+ContactLab ESLint extensible and sharable configuration.
 
 ## Usage
 
 Install the configuration as a npm package:
 
 ```sh
-npm install --save-dev eslint-config-smagrassi
+$ npm install --save-dev eslint-config-contactlab
+
+# --- OR ---
+
+$ yarn add --dev eslint-config-contactlab
 ```
 
 and then add it as extension in your ESLint configuration file:
 
 ```javascript
 
-// for example in your .eslinrc
+// for example in your .eslinrc or package.json
 
 {
-  "extends": "smagrassi"
+  "extends": "contactlab"
 }
 
 ```
