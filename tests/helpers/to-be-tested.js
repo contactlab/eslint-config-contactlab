@@ -1,6 +1,5 @@
 /**
- * @file Get the rule to be tested from list.
- * @author StefanoMagrassi <stefano.magrassi@gmail.com>
+ * Get the rule to be tested from list.
  */
 
 /**

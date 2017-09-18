@@ -1,6 +1,5 @@
 /**
- * @file ES6 rules tests
- * @author StefanoMagrassi <stefano.magrassi@gmail.com>
+ * ES6 rules tests
  */
 
 const test          = require('tape');
