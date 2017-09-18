@@ -1,6 +1,5 @@
 /**
- * @file Defines ESLint rules and configuration exported by the package
- * @author StefanoMagrassi <stefano.magrassi@gmail.com>
+ * Defines ESLint rules and configuration exported by the package
  */
 
 module.exports = {

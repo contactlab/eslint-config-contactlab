@@ -1,6 +1,5 @@
 /**
- * @file Check if there are errors.
- * @author StefanoMagrassi <stefano.magrassi@gmail.com>
+ * Check if there are errors.
  */
 
 const linter = require('eslint').linter;

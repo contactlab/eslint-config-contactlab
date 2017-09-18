@@ -1,6 +1,5 @@
 /**
- * @file Common rules (both ES5 and ES6)
- * @author StefanoMagrassi <stefano.magrassi@gmail.com>
+ * Common rules (both ES5 and ES6)
  */
 
 module.exports = {

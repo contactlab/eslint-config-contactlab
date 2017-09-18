@@ -1,6 +1,5 @@
 /**
- * @file Common rules tests
- * @author StefanoMagrassi <stefano.magrassi@gmail.com>
+ * Common rules tests
  */
 
 const test          = require('tape');

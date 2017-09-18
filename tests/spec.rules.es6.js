@@ -1,6 +1,5 @@
 /**
- * @file ES6 rules tests specification
- * @author StefanoMagrassi <stefano.magrassi@gmail.com>
+ * ES6 rules tests specification
  */
 
 module.exports = [

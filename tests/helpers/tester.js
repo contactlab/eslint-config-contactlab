@@ -1,6 +1,5 @@
 /**
- * @file Utility in order to run specific ESLint tests.
- * @author StefanoMagrassi <stefano.magrassi@gmail.com>
+ * Utility in order to run specific ESLint tests.
  */
 
 const toBeTested = require('./to-be-tested');

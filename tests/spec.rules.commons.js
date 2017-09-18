@@ -1,6 +1,5 @@
 /**
- * @file Common rules tests specification
- * @author StefanoMagrassi <stefano.magrassi@gmail.com>
+ * Common rules tests specification
  */
 
 module.exports = [
@@ -208,7 +207,7 @@ module.exports = [
     ok: 'var foo = new Bar()',
     ko: 'var foo = new bar();'
   },
-	{                                                                                                                                                         
+	{
 		title: 'Fn with capital letter - simple function with capital letter could not be constructor',
 		rule: 'new-cap',
 		ok: 'var foo = Bar()',
