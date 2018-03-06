@@ -172,6 +172,12 @@ module.exports = [
     ko: 'n + 1'
   },
   {
+    title: 'No unused vars - disallow unused vars, but ignore function args that match pattern',
+    rule: 'no-unused-vars',
+    ok: 'function fn(_) {return "foo";} fn();',
+    ko: 'function fn(bar) {return "baz";} fn();'
+  },
+  {
     title: 'No useless call - disallow unnecessary calls to .call() and .apply()',
     rule: 'no-useless-call',
     ok: 'function foo(a,b,c) {return a+b+c;} foo.call(bar, 1,2,3); foo.apply(bar, [1,2,3]);',
