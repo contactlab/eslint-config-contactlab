@@ -43,6 +43,11 @@ module.exports = {
     'no-undef-init': 'error',
     'no-undefined': 'error',
     'no-unused-expressions': 'error',
+    'no-unused-vars': [
+      'error', {
+        'argsIgnorePattern': '^_$'
+      }
+    ],
     'no-useless-call': 'error',
     'no-useless-concat': 'error',
     'no-useless-escape': 'error',
