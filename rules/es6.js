@@ -22,6 +22,11 @@ module.exports = {
     'prefer-spread': 'error',
     'prefer-rest-params': 'error',
     'prefer-const': 'error',
-    'prefer-arrow-callback': 'error'
+    'prefer-arrow-callback': 'error',
+    'no-unused-expressions': [
+      'error', {
+        'allowTaggedTemplates': true
+      }
+    ]
   }
 };
