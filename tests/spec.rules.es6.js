@@ -56,5 +56,11 @@ module.exports = [
     rule: 'prefer-arrow-callback',
     ok: 'setTimeout(() => foo = true, 500)',
     ko: 'setTimeout(function() { return foo = true }, 500)'
+  },
+  {
+    title: 'No unused expressions - enable tagged string template',
+    rule: 'no-unused-expressions',
+    ok: 'fixture `my test`;',
+    ko: '`my test`'
   }
 ];
