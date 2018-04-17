@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/contactlab/eslint-config-contactlab.svg?branch=master)](https://travis-ci.org/contactlab/eslint-config-contactlab)
+
 # eslint-config-contactlab
 
 ContactLab ESLint extensible and sharable configuration.
