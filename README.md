@@ -1,7 +1,6 @@
-[![Build Status](https://travis-ci.org/contactlab/eslint-config-contactlab.svg?branch=master)](https://travis-ci.org/contactlab/eslint-config-contactlab)
-
 # eslint-config-contactlab
 
+[![Build Status](https://travis-ci.org/contactlab/eslint-config-contactlab.svg?branch=master)](https://travis-ci.org/contactlab/eslint-config-contactlab)
 [![Greenkeeper badge](https://badges.greenkeeper.io/contactlab/eslint-config-contactlab.svg)](https://greenkeeper.io/)
 
 ContactLab ESLint extensible and sharable configuration.
