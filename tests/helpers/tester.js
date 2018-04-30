@@ -2,9 +2,14 @@
  * Utility in order to run specific ESLint tests.
  */
 
+// --- Imports
 const toBeTested = require('./to-be-tested');
 const hasError = require('./has-error');
 
+// --- Exports
+module.exports = tester;
+
+// --- Public
 /**
  * Create a new subtest and test against the specification (in ES6 environment or not).
  * @public
@@ -24,5 +29,3 @@ function tester(t, rules, spec, withES6) {
     st.ok(hasError(spec.ko, rule), 'error when code does not adhere to rule');
   });
 }
-
-module.exports = tester;

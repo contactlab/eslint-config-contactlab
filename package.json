@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-contactlab",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "ContactLab ESLint configuration",
   "main": "index.js",
   "files": [
@@ -8,8 +8,8 @@
     "rules"
   ],
   "engines": {
-    "node": ">= 4",
-    "npm": ">= 3.0"
+    "node": ">= 6.2",
+    "npm": ">= 3.8.9"
   },
   "scripts": {
     "lint": "eslint ./index.js",
@@ -51,7 +51,7 @@
   "devDependencies": {
     "eslint": "4.19.1",
     "faucet": "0.0.1",
-    "sinon": "4.5.0",
+    "sinon": "5.0.1",
     "tape": "4.9.0"
   }
 }

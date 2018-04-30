@@ -2,8 +2,13 @@
  * Check if there are errors.
  */
 
+// --- Imports
 const linter = require('eslint').linter;
 
+// --- Exports
+module.exports = hasError;
+
+// --- Public
 /**
  * Checks if errors list is empty or not.
  * @param  {string}  code - Code string
@@ -13,5 +18,3 @@ const linter = require('eslint').linter;
 function hasError(code, rule) {
   return (linter.verify(code, rule).length > 0);
 }
-
-module.exports = hasError;
