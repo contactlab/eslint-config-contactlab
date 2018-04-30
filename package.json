@@ -8,8 +8,8 @@
     "rules"
   ],
   "engines": {
-    "node": ">= 4",
-    "npm": ">= 3.0"
+    "node": ">= 6.2",
+    "npm": ">= 3.8.9"
   },
   "scripts": {
     "lint": "eslint ./index.js",
