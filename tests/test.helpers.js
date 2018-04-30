@@ -17,7 +17,7 @@ test('Helpers', t => {
     const expected = { rules: { 'brace-style': 'error' } };
 
     st.deepEqual(assert, expected, 'should return a "rules" object with the "rule" to be tested');
-    st.throws(function() {
+    st.throws(() => {
       toBeTested(rules, 'foo');
     }, 'should throw error if there is not specified rule');
   });
@@ -31,7 +31,7 @@ test('Helpers', t => {
     const expected = { env: {es6: true}, rules: { 'brace-style': 'error' } };
 
     st.deepEqual(assert, expected, 'should return a "rules" object with the "rule" to be tested');
-    st.throws(function() {
+    st.throws(() => {
       toBeTested(rules, 'foo');
     }, 'should throw error if there is not specified rule');
   });

@@ -2,6 +2,10 @@
  * Get the rule to be tested from list.
  */
 
+// --- Exports
+module.exports = toBeTested;
+
+// --- Public
 /**
  * Gets the rule to be tested from a list of rules.
  * @public
@@ -17,8 +21,11 @@ function toBeTested(list, name, withES6) {
     throw new Error('no rules match name');
   }
 
-  const output = { rules: {} };
-  output.rules[name] = rule;
+  const output = {
+    rules: {
+      [name]: rule
+    }
+  };
 
   if (typeof withES6 !== 'undefined' && withES6) {
     output['env'] = {es6: true};
@@ -26,5 +33,3 @@ function toBeTested(list, name, withES6) {
 
   return output;
 }
-
-module.exports = toBeTested;
