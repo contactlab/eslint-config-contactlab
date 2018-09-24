@@ -4,12 +4,6 @@ node_js:
   - "6"
   - "node"
 
-before_install:
-  - npm install -g npm
-  - npm install -g greenkeeper-lockfile@1
-before_script: greenkeeper-lockfile-update
-after_script: greenkeeper-lockfile-upload
-
 cache:
   directories:
     - "node_modules"
