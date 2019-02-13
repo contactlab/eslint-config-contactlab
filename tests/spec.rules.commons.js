@@ -4,7 +4,8 @@
 
 module.exports = [
   {
-    title: 'Brace style - opening braces on the same line of statement/declaration',
+    title:
+      'Brace style - opening braces on the same line of statement/declaration',
     rule: 'brace-style',
     ok: 'if (foo) {\nbar()\n} else {\nbaz()\n}',
     ko: 'if (foo) { bar() }'
@@ -40,7 +41,8 @@ module.exports = [
     ko: 'var t = foo == bar; var f = foo != bar'
   },
   {
-    title: 'Global require - require "require()" calls to be placed at top-level module scope',
+    title:
+      'Global require - require "require()" calls to be placed at top-level module scope',
     rule: 'global-require',
     ok: 'var fs = require("fs"); var file = fs.readFile();',
     ko: 'function readFile() { var fs = require("fs"); return fs.readFile(); }'
@@ -54,8 +56,10 @@ module.exports = [
   {
     title: 'Indentation - enforce consistent indentation (2 spaces)',
     rule: 'indent',
-    ok: 'if (a) {\n  b = true;\n}\nvar c = 1,\n    d = [];\nswitch (e) {\n  case 1:\n    var f = 2;\n  default:\n    var f = 3;\n}',
-    ko: 'if (a) {\nb = true;\n}\nvar c = 1,\nd = [];\nswitch (e) {\ncase 1:\n  var f = 2;\n  default:\n  var f = 3;\n}'
+    ok:
+      'if (a) {\n  b = true;\n}\nvar c = 1,\n    d = [];\nswitch (e) {\n  case 1:\n    var f = 2;\n  default:\n    var f = 3;\n}',
+    ko:
+      'if (a) {\nb = true;\n}\nvar c = 1,\nd = [];\nswitch (e) {\ncase 1:\n  var f = 2;\n  default:\n  var f = 3;\n}'
   },
   {
     title: 'Linebreak - enforce consistent linebreak style (unix)',
@@ -64,7 +68,8 @@ module.exports = [
     ko: 'var foo;\r\n'
   },
   {
-    title: 'No equals to null - disallow null comparisons without type-checking operators',
+    title:
+      'No equals to null - disallow null comparisons without type-checking operators',
     rule: 'no-eq-null',
     ok: 'if (foo === null) var bar = (baz !== null);',
     ko: 'if (foo == null) var bar = (baz != null);'
@@ -78,7 +83,8 @@ module.exports = [
   {
     title: 'No extend native - disallow extending native types',
     rule: 'no-extend-native',
-    ok: 'var MyString = Object.create(String.prototype); MyString.prototype.toArray = function() {};',
+    ok:
+      'var MyString = Object.create(String.prototype); MyString.prototype.toArray = function() {};',
     ko: 'String.prototype.toArray = function() {};'
   },
   {
@@ -88,7 +94,8 @@ module.exports = [
     ko: 'var foo = function() { name(); }.bind(bar)'
   },
   {
-    title: 'No floating decimal - disallow leading or trailing decimal points in numeric literals',
+    title:
+      'No floating decimal - disallow leading or trailing decimal points in numeric literals',
     rule: 'no-floating-decimal',
     ok: 'var num = 0.5; var num = 2.0; var num = -0.7;',
     ko: 'var num = .5; var num = 2.; var num = -.7;'
@@ -100,7 +107,8 @@ module.exports = [
     ko: 'var b = !!foo; var n = +foo; var s = "" + foo;'
   },
   {
-    title: 'No implicit globals - disallow var and named function declarations in the global scope',
+    title:
+      'No implicit globals - disallow var and named function declarations in the global scope',
     rule: 'no-implicit-globals',
     ok: 'window.foo = 1; (function() { var bar = 0; })();',
     ko: 'var foo = 1; (function() { bar = 0; })();'
@@ -124,16 +132,19 @@ module.exports = [
     ko: 'var baz = foo = bar ? true : false ? 0 : 1'
   },
   {
-    title: 'No new Function() - disallow new operators with the Function object',
+    title:
+      'No new Function() - disallow new operators with the Function object',
     rule: 'no-new-func',
     ok: 'var foo = function() { return true; }',
     ko: 'var foo = new Function("return true;")'
   },
   {
-    title: 'No "new" wrappers - disallow new operators with the String, Number, and Boolean objects',
+    title:
+      'No "new" wrappers - disallow new operators with the String, Number, and Boolean objects',
     rule: 'no-new-wrappers',
     ok: 'var foo = "", bar = 1, baz = true;',
-    ko: 'var foo = new String(""), bar = new Number(1), baz = new Boolean(true);'
+    ko:
+      'var foo = new String(""), bar = new Number(1), baz = new Boolean(true);'
   },
   {
     title: 'No param reassign - disallow reassigning function parameters',
@@ -148,7 +159,8 @@ module.exports = [
     ko: 'location.href = "javascript:void(0)";'
   },
   {
-    title: 'No undef - disallow the use of undeclared variables unless mentioned in /*global */ comments',
+    title:
+      'No undef - disallow the use of undeclared variables unless mentioned in /*global */ comments',
     rule: 'no-undef',
     ok: '/*global $*/ var b = $(".foo").children()[0];',
     ko: 'var b = $(".foo").children()[0]'
@@ -172,19 +184,24 @@ module.exports = [
     ko: 'n + 1'
   },
   {
-    title: 'No unused vars - disallow unused vars, but ignore function args that match pattern',
+    title:
+      'No unused vars - disallow unused vars, but ignore function args that match pattern',
     rule: 'no-unused-vars',
     ok: 'function fn(_) {return "foo";} fn();',
     ko: 'function fn(bar) {return "baz";} fn();'
   },
   {
-    title: 'No useless call - disallow unnecessary calls to .call() and .apply()',
+    title:
+      'No useless call - disallow unnecessary calls to .call() and .apply()',
     rule: 'no-useless-call',
-    ok: 'function foo(a,b,c) {return a+b+c;} foo.call(bar, 1,2,3); foo.apply(bar, [1,2,3]);',
-    ko: 'function foo(a,b,c) {return a+b+c;} foo.call(null, 1,2,3); foo.apply(null, [1,2,3]);'
+    ok:
+      'function foo(a,b,c) {return a+b+c;} foo.call(bar, 1,2,3); foo.apply(bar, [1,2,3]);',
+    ko:
+      'function foo(a,b,c) {return a+b+c;} foo.call(null, 1,2,3); foo.apply(null, [1,2,3]);'
   },
   {
-    title: 'No useless concat - disallow unnecessary concatenation of literals or template literals',
+    title:
+      'No useless concat - disallow unnecessary concatenation of literals or template literals',
     rule: 'no-useless-concat',
     ok: 'var foo = 1 + "bar";',
     ko: 'var foo = "bar" + "bar"; var baz = `1` + `bar`'
@@ -193,7 +210,7 @@ module.exports = [
     title: 'No useless escape - disallow unnecessary escape characters',
     rule: 'no-useless-escape',
     ok: 'var quote = "\'bar\'";',
-    ko: 'var quote = "\"bar\"";'
+    ko: 'var quote = ""bar"";'
   },
   {
     title: 'No void operator - disallow void operators',
@@ -208,19 +225,22 @@ module.exports = [
     ko: 'var foo = {}; with(foo) { add = function(a, b) {return a + b}; };'
   },
   {
-    title: 'Constructor fn with capital letter - require constructor function names to begin with a capital letter',
+    title:
+      'Constructor fn with capital letter - require constructor function names to begin with a capital letter',
     rule: 'new-cap',
     ok: 'var foo = new Bar()',
     ko: 'var foo = new bar();'
   },
-	{
-		title: 'Fn with capital letter - simple function with capital letter could not be constructor',
-		rule: 'new-cap',
-		ok: 'var foo = Bar()',
-		ko: 'var foo = new bar();'
-	},
   {
-    title: 'One "var" per declaration - enforce variables to be declared either together or separately in functions',
+    title:
+      'Fn with capital letter - simple function with capital letter could not be constructor',
+    rule: 'new-cap',
+    ok: 'var foo = Bar()',
+    ko: 'var foo = new bar();'
+  },
+  {
+    title:
+      'One "var" per declaration - enforce variables to be declared either together or separately in functions',
     rule: 'one-var',
     ok: 'var foo = 1; var bar = true; var baz = "a";',
     ko: 'var foo = 1, bar = true, baz = "a";'
@@ -228,11 +248,12 @@ module.exports = [
   {
     title: 'Quote style - enforce the consistent use of quotes type (single)',
     rule: 'quotes',
-    ok: 'var foo = \'bar\';',
+    ok: "var foo = 'bar';",
     ko: 'var foo = "bar";'
   },
   {
-    title: 'Radix in parseInt - enforce the consistent use of the radix argument when using parseInt()',
+    title:
+      'Radix in parseInt - enforce the consistent use of the radix argument when using parseInt()',
     rule: 'radix',
     ok: 'var foo = parseInt("10", 10);',
     ko: 'var foo = parseInt("10");'
@@ -244,13 +265,15 @@ module.exports = [
     ko: 'var foo = 1\nvar bar = 2;'
   },
   {
-    title: 'Var at the top - require var declarations be placed at the top of their containing scope',
+    title:
+      'Var at the top - require var declarations be placed at the top of their containing scope',
     rule: 'vars-on-top',
     ok: 'var foo = 1; var bar; if (foo) { bar = foo * 2; }',
     ko: 'var foo = 1; if (foo) { var bar = foo * 2; }'
   },
   {
-    title: 'Wrap IIFE - require parentheses around immediate function invocations',
+    title:
+      'Wrap IIFE - require parentheses around immediate function invocations',
     rule: 'wrap-iife',
     ok: '(function foo() { return 1; })();',
     ko: 'function foo() { return 1; }();'
