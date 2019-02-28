@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-contactlab",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Contactlab ESLint configuration",
   "repository": "contactlab/eslint-config-contactlab",
   "author": "Contactlab",
