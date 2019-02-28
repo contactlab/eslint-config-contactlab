@@ -1,40 +1,11 @@
 {
   "name": "eslint-config-contactlab",
-  "version": "2.0.1",
-  "description": "ContactLab ESLint configuration",
-  "main": "index.js",
-  "files": [
-    "index.js",
-    "rules"
-  ],
-  "engines": {
-    "node": ">= 6.2",
-    "npm": ">= 3.8.9"
-  },
-  "scripts": {
-    "lint": "eslint ./index.js",
-    "pretest": "npm run lint",
-    "test": "tape './tests/test.*.js' | faucet",
-    "prepublish": "npm test"
-  },
-  "eslintConfig": {
-    "extends": "eslint:recommended",
-    "env": {
-      "node": true,
-      "es6": true
-    },
-    "rules": {
-      "indent": [
-        "error",
-        2
-      ],
-      "quotes": [
-        "error",
-        "single"
-      ]
-    }
-  },
+  "version": "2.0.2",
+  "description": "Contactlab ESLint configuration",
   "repository": "contactlab/eslint-config-contactlab",
+  "author": "Contactlab",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/contactlab/eslint-config-contactlab#readme",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -45,9 +16,21 @@
     "clab",
     "contactlab"
   ],
-  "author": "ContactLab Frontend Team",
-  "license": "Apache-2.0",
-  "homepage": "https://github.com/contactlab/eslint-config-contactlab#readme",
+  "engines": {
+    "node": ">= 6.2",
+    "npm": ">= 3.8.9"
+  },
+  "files": [
+    "index.js",
+    "rules"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./index.js",
+    "pretest": "npm run lint",
+    "test": "tape './tests/test.*.js' | faucet",
+    "prepublish": "npm test"
+  },
   "devDependencies": {
     "eslint": "5.14.1",
     "faucet": "0.0.1",
