@@ -1,6 +1,6 @@
 # eslint-config-contactlab
 
-[![Build Status](https://clab-dev.visualstudio.com/OSS/_apis/build/status/contactlab.eslint-config-contactlab?branchName=azure-pipelines)](https://clab-dev.visualstudio.com/OSS/_build/latest?definitionId=31&branchName=azure-pipelines)
+[![Build Status](https://clab-dev.visualstudio.com/OSS/_apis/build/status/contactlab.eslint-config-contactlab?branchName=master)](https://clab-dev.visualstudio.com/OSS/_build/latest?definitionId=31&branchName=master)
 
 ContactLab ESLint extensible and sharable configuration.
 
