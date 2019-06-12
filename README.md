@@ -1,7 +1,6 @@
 # eslint-config-contactlab
 
-[![Build Status](https://travis-ci.org/contactlab/eslint-config-contactlab.svg?branch=master)](https://travis-ci.org/contactlab/eslint-config-contactlab)
-[![Greenkeeper badge](https://badges.greenkeeper.io/contactlab/eslint-config-contactlab.svg)](https://greenkeeper.io/)
+[![Build Status](https://clab-dev.visualstudio.com/OSS/_apis/build/status/contactlab.eslint-config-contactlab?branchName=azure-pipelines)](https://clab-dev.visualstudio.com/OSS/_build/latest?definitionId=31&branchName=azure-pipelines)
 
 ContactLab ESLint extensible and sharable configuration.
 
