@@ -9,22 +9,24 @@ module.exports = {
   },
   rules: {
     'brace-style': 'error',
-    'camelcase': 'error',
-    'curly': 'error',
+    camelcase: 'error',
+    curly: 'error',
     'default-case': 'error',
     'dot-notation': 'error',
-    'eqeqeq': 'error',
+    eqeqeq: 'error',
     'global-require': 'error',
     'guard-for-in': 'error',
-    'indent': [
+    indent: [
       'error',
-      2, {
-        'VariableDeclarator': 2,
-        'SwitchCase': 1,
-        'MemberExpression': 'off'
+      2,
+      {
+        VariableDeclarator: 2,
+        SwitchCase: 1,
+        MemberExpression: 'off'
       }
     ],
     'linebreak-style': ['error', 'unix'],
+    'no-console': 'error',
     'no-eq-null': 'error',
     'no-eval': 'error',
     'no-extend-native': 'error',
@@ -44,8 +46,9 @@ module.exports = {
     'no-undefined': 'error',
     'no-unused-expressions': 'error',
     'no-unused-vars': [
-      'error', {
-        'argsIgnorePattern': '^_$'
+      'error',
+      {
+        argsIgnorePattern: '^_$'
       }
     ],
     'no-useless-call': 'error',
@@ -54,15 +57,16 @@ module.exports = {
     'no-void': 'error',
     'no-with': 'error',
     'new-cap': [
-      'error', {
-        'newIsCap': true,
-        'capIsNew': false
+      'error',
+      {
+        newIsCap: true,
+        capIsNew: false
       }
     ],
     'one-var': ['error', 'never'],
-    'quotes': ['error', 'single'],
-    'radix': 'error',
-    'semi': ['error', 'always'],
+    quotes: ['error', 'single'],
+    radix: 'error',
+    semi: ['error', 'always'],
     'vars-on-top': 'error',
     'wrap-iife': ['error', 'inside']
   }

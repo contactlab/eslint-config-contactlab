@@ -11,8 +11,6 @@ pool:
 # --- Execute the job with 2 different versions of Node
 strategy:
   matrix:
-    Node_6:
-      node_version: 6.x
     Node_8:
       node_version: 8.x
     Node_10:
@@ -26,6 +24,6 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install
+    npm ci
     npm test
   displayName: 'Run tests'

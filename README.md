@@ -35,3 +35,9 @@ See the [ESlint config docs](http://eslint.org/docs/user-guide/configuring#exten
 The configuration already extends the default `eslint:recommended` rules.
 
 Package specific rules can be found in `/rules` folder.
+
+## Nodejs v6.x
+
+Since **v3.0.0** `eslint-config-contactlab` supports **Nodejs version >= 8.x**
+
+If you need support for **older versions** please use **v2.0.2**
