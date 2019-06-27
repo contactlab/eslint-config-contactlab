@@ -68,6 +68,12 @@ module.exports = [
     ko: 'var foo;\r\n'
   },
   {
+    title: 'No console - disallow the use of console.* methods',
+    rule: 'no-console',
+    ok: 'function log() {return;}\nvar foo = "bar"; log(foo)',
+    ko: 'var foo = "bar"; console.log(foo);'
+  },
+  {
     title:
       'No equals to null - disallow null comparisons without type-checking operators',
     rule: 'no-eq-null',
@@ -248,7 +254,7 @@ module.exports = [
   {
     title: 'Quote style - enforce the consistent use of quotes type (single)',
     rule: 'quotes',
-    ok: "var foo = 'bar';",
+    ok: "var foo = 'bar';", // eslint-disable-line quotes
     ko: 'var foo = "bar";'
   },
   {

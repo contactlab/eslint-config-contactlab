@@ -13,10 +13,13 @@ module.exports = {
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['error', 'as-needed'],
-    'arrow-spacing': ['error', {
-      'before': true,
-      'after': true
-    }],
+    'arrow-spacing': [
+      'error',
+      {
+        before: true,
+        after: true
+      }
+    ],
     'no-var': 'error',
     'prefer-template': 'error',
     'prefer-spread': 'error',
@@ -24,8 +27,9 @@ module.exports = {
     'prefer-const': 'error',
     'prefer-arrow-callback': 'error',
     'no-unused-expressions': [
-      'error', {
-        'allowTaggedTemplates': true
+      'error',
+      {
+        allowTaggedTemplates: true
       }
     ]
   }
