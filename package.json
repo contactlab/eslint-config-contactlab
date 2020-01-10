@@ -2,18 +2,17 @@
   "name": "eslint-config-contactlab",
   "version": "3.0.0",
   "description": "Contactlab ESLint configuration",
-  "repository": "contactlab/eslint-config-contactlab",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "author": "Contactlab",
   "license": "Apache-2.0",
+  "repository": "contactlab/eslint-config-contactlab",
   "homepage": "https://github.com/contactlab/eslint-config-contactlab#readme",
+  "bugs": "https://github.com/contactlab/eslint-config-contactlab/issues",
   "keywords": [
     "eslint",
     "eslintconfig",
-    "lint",
-    "linter",
-    "javascript",
-    "js",
-    "clab",
+    "tslint",
     "contactlab"
   ],
   "engines": {
@@ -21,20 +20,27 @@
     "npm": ">= 3.8.9"
   },
   "files": [
-    "index.js",
-    "rules"
+    "dist"
   ],
-  "main": "index.js",
   "scripts": {
-    "lint": "eslint ./index.js",
-    "pretest": "npm run lint",
-    "test": "tape './tests/test.*.js' | faucet",
-    "prepublish": "npm test"
+    "test": "tsc --noEmit",
+    "build": "tsc",
+    "prepublish": "npm test && npm run build"
+  },
+  "peerDependencies": {
+    "eslint": "^6.8.0"
   },
   "devDependencies": {
-    "eslint": "6.8.0",
-    "faucet": "0.0.1",
-    "sinon": "8.0.2",
-    "tape": "4.12.1"
+    "@types/eslint": "^6.1.3",
+    "eslint": "^6.8.0",
+    "husky": "^4.0.6",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "typescript": "3.7.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
