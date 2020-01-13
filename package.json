@@ -27,7 +27,7 @@
     "test": "eslint ./test/. -c ./dist/index.js --ext .js,.jsx,.ts,.tsx",
     "prebuild": "rm -rf ./dist",
     "build": "tsc",
-    "prepublish": "npm test && npm run build"
+    "prepublishOnly": "npm test && npm run build"
   },
   "peerDependencies": {
     "eslint": "^6.8.0"
