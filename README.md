@@ -64,7 +64,7 @@ Package specific rules can be found in `/src/config-*.ts` files.
 
 ## Older Nodejs versions
 
-## v8.x
+### v8.x
 
 Since **v4.0.0** `eslint-config-contactlab` supports **Nodejs version >= 10.x**
 
