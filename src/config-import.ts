@@ -9,12 +9,12 @@ export = {
         groups: ['builtin', 'external', 'parent', ['sibling', 'index']],
         pathGroups: [
           {
-            pattern: 'classcat',
+            pattern: './style.*',
             group: 'index',
             position: 'after'
           },
           {
-            pattern: './style.pcss',
+            pattern: './*.html',
             group: 'index',
             position: 'after'
           }
