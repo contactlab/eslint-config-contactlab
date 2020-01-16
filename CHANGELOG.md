@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.1.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/4.1.0)
+
+**Feature:**
+
+- handle styles and .html imports (#69)
+- add CHANGELOG (#70)
+
 ## [4.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/4.0.0)
 
 **Feature:**
