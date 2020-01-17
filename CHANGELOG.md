@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.1.1](https://github.com/contactlab/eslint-config-contactlab/releases/tag/4.1.1)
+
+**Fix**
+
+- removed too specific `camelcase` rule option (#72)
+
 ## [4.1.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/4.1.0)
 
 **Feature:**
