@@ -15,8 +15,7 @@ export = {
     camelcase: [
       'error',
       {
-        properties: 'never',
-        allow: ['HW_config']
+        properties: 'never'
       }
     ],
     'comma-dangle': 'error',
