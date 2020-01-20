@@ -24,7 +24,9 @@
   ],
   "scripts": {
     "pretest": "npm run build",
-    "test": "eslint ./test/. -c ./dist/index.js --ext .js,.jsx,.ts,.tsx",
+    "test:es": "eslint ./test/. -c ./test/_config.es.js --ext .js,.jsx",
+    "test:ts": "eslint ./test/. -c ./test/_config.ts.js --ext .ts,.tsx",
+    "test": "npm run test:es && npm run test:ts",
     "prebuild": "rm -rf ./dist",
     "build": "tsc",
     "prepublishOnly": "npm test && npm run build"

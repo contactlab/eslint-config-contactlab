@@ -5,19 +5,10 @@ export = {
     node: true
   },
 
-  extends: [
-    './config-es.js',
-    './config-ts.js',
-    './config-import.js',
-    './config-jsdoc.js'
-  ],
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module'
+  },
 
-  overrides: [
-    {
-      files: ['*.js'],
-      rules: {
-        '@typescript-eslint/explicit-function-return-type': 'off'
-      }
-    }
-  ]
+  extends: ['./config/es.js', './config/import.js', './config/jsdoc.js']
 };
