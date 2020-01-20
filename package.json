@@ -30,7 +30,8 @@
     "prepublishOnly": "npm test && npm run build"
   },
   "peerDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^6.8.0",
+    "typescript": "^3.7.5"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.15.0",
@@ -45,7 +46,7 @@
     "husky": "^4.0.6",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
-    "typescript": "3.7.5"
+    "typescript": "^3.7.5"
   },
   "husky": {
     "hooks": {
