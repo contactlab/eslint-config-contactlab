@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['../dist/typescript.js']
+  extends: ['../typescript.js']
 };
