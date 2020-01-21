@@ -72,8 +72,6 @@ ES configuration already extends the default `eslint:recommended` rules.
 
 TypeScript configuration the `plugin:@typescript-eslint/recommended` rules.
 
-Package specific rules can be found in `/src/config-*.ts` files.
-
 ## Older Nodejs versions
 
 ### v8.x

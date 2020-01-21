@@ -2,8 +2,7 @@
   "name": "eslint-config-contactlab",
   "version": "4.2.0-0",
   "description": "Contactlab ESLint configuration",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "index.js",
   "author": "Contactlab",
   "license": "Apache-2.0",
   "repository": "contactlab/eslint-config-contactlab",
@@ -20,14 +19,15 @@
     "npm": ">= 6.13"
   },
   "files": [
-    "dist"
+    "index.js",
+    "typescript.js"
   ],
   "scripts": {
     "pretest": "npm run build",
     "test:es": "eslint ./test/. -c ./test/_config.es.js --ext .js,.jsx",
     "test:ts": "eslint ./test/. -c ./test/_config.ts.js --ext .ts,.tsx",
     "test": "npm run test:es && npm run test:ts",
-    "prebuild": "rm -rf ./dist",
+    "prebuild": "rm -f ./index.js ./typescript.js",
     "build": "tsc",
     "prepublishOnly": "npm test && npm run build"
   },

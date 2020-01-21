@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
     "allowJs": false,
-    "outDir": "./dist",
     "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "lib": ["esnext"],
     "sourceMap": false,
-    "declaration": true,
+    "declaration": false,
     "strict": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
@@ -16,5 +15,5 @@
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["./src"]
+  "files": ["index.ts", "typescript.ts"]
 }
