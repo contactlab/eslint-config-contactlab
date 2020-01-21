@@ -33,7 +33,17 @@ See the [ESlint config docs](http://eslint.org/docs/user-guide/configuring#exten
 
 ## TypeScript
 
-If you need to lint TypeScript files please run the `eslint` CLI with `--ext .js,.jsx,.ts,.tsx` [option](https://eslint.org/docs/user-guide/command-line-interface#ext).
+If you need to lint TypeScript files please use the `contactlab/typescript` config
+
+```js
+// in your .eslinrc.js or package.json
+
+{
+  "extends": "contactlab/typescript"
+}
+```
+
+and run the `eslint` CLI with `--ext .js,.jsx,.ts,.tsx` [option](https://eslint.org/docs/user-guide/command-line-interface#ext).
 
 You can also disable rules on file basis (in case they collide with your configuration) with the [`overrides`](https://eslint.org/docs/user-guide/configuring#disabling-rules-only-for-a-group-of-files) key:
 
@@ -58,9 +68,9 @@ module.exports = {
 
 ## Rules
 
-The configuration already extends the default `eslint:recommended` and `plugin:@typescript-eslint/recommended` rules.
+ES configuration already extends the default `eslint:recommended` rules.
 
-Package specific rules can be found in `/src/config-*.ts` files.
+TypeScript configuration the `plugin:@typescript-eslint/recommended` rules.
 
 ## Older Nodejs versions
 

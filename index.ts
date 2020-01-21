@@ -1,7 +1,21 @@
 export = {
-  extends: ['eslint:recommended'],
+  env: {
+    browser: true,
+    es6: true,
+    node: true
+  },
+
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module'
+  },
+
+  plugins: ['import'],
+
+  extends: ['eslint:recommended', 'plugin:jsdoc/recommended'],
 
   rules: {
+    // --- ES6
     'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['error', 'as-needed'],
     'arrow-spacing': [
@@ -115,6 +129,48 @@ export = {
     'sort-keys': 'off',
     'vars-on-top': 'error',
     'wrap-iife': ['error', 'inside'],
-    'valid-typeof': 'off'
+    'valid-typeof': 'off',
+
+    // --- Import
+    'import/no-deprecated': 'error',
+    'import/order': [
+      'error',
+      {
+        groups: ['builtin', 'external', 'parent', ['sibling', 'index']],
+        pathGroups: [
+          {
+            pattern: './style.*',
+            group: 'index',
+            position: 'after'
+          },
+          {
+            pattern: './*.html',
+            group: 'index',
+            position: 'after'
+          }
+        ],
+        pathGroupsExcludedImportTypes: ['builtin'],
+        alphabetize: {
+          order: 'asc'
+        }
+      }
+    ],
+
+    // --- JSDoc
+    'jsdoc/check-tag-names': [
+      'error',
+      {
+        definedTags: ['jest-environment']
+      }
+    ],
+    'jsdoc/require-jsdoc': 'off',
+    'jsdoc/require-param': 'off',
+    'jsdoc/require-param-description': 'off',
+    'jsdoc/require-param-name': 'off',
+    'jsdoc/require-param-type': 'off',
+    'jsdoc/require-returns': 'off',
+    'jsdoc/require-returns-check': 'off',
+    'jsdoc/require-returns-description': 'off',
+    'jsdoc/require-returns-type': 'off'
   }
 };

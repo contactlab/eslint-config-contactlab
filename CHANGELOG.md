@@ -1,6 +1,14 @@
 # Changelog
 
+## [4.2.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/4.2.0)
+
+**Fix:**
+
+- Fix TypeScript dependency (#79)
+
 ## [4.1.1](https://github.com/contactlab/eslint-config-contactlab/releases/tag/4.1.1)
+
+:warning: **This version is broken in _non-typescript_ environments. Please use v4.2.0 instead**
 
 **Fix**
 

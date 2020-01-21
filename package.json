@@ -1,9 +1,8 @@
 {
   "name": "eslint-config-contactlab",
-  "version": "4.1.1",
+  "version": "4.2.0",
   "description": "Contactlab ESLint configuration",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "index.js",
   "author": "Contactlab",
   "license": "Apache-2.0",
   "repository": "contactlab/eslint-config-contactlab",
@@ -20,17 +19,21 @@
     "npm": ">= 6.13"
   },
   "files": [
-    "dist"
+    "index.js",
+    "typescript.js"
   ],
   "scripts": {
     "pretest": "npm run build",
-    "test": "eslint ./test/. -c ./dist/index.js --ext .js,.jsx,.ts,.tsx",
-    "prebuild": "rm -rf ./dist",
+    "test:es": "eslint ./test/. -c ./test/_config.es.js --ext .js,.jsx",
+    "test:ts": "eslint ./test/. -c ./test/_config.ts.js --ext .ts,.tsx",
+    "test": "npm run test:es && npm run test:ts",
+    "prebuild": "rm -f ./index.js ./typescript.js",
     "build": "tsc",
     "prepublishOnly": "npm test && npm run build"
   },
   "peerDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^6.8.0",
+    "typescript": "^3.7.5"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.15.0",
@@ -45,7 +48,7 @@
     "husky": "^4.0.6",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
-    "typescript": "3.7.5"
+    "typescript": "^3.7.5"
   },
   "husky": {
     "hooks": {

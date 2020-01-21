@@ -1,12 +1,19 @@
 export = {
+  env: {
+    browser: true,
+    es6: true,
+    node: true
+  },
+
   parser: '@typescript-eslint/parser',
 
+  plugins: ['@typescript-eslint'],
+
   extends: [
+    './index.js',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended'
   ],
-
-  plugins: ['@typescript-eslint'],
 
   rules: {
     '@typescript-eslint/array-type': [
