@@ -39,7 +39,7 @@
     "@typescript-eslint/eslint-plugin": "^2.15.0",
     "@typescript-eslint/parser": "^2.15.0",
     "eslint-plugin-import": "github:contactlab/eslint-plugin-import",
-    "eslint-plugin-jsdoc": "^20.0.5"
+    "eslint-plugin-jsdoc": "^21.0.0"
   },
   "devDependencies": {
     "@types/eslint": "^6.1.3",
