@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.2.1](https://github.com/contactlab/eslint-config-contactlab/releases/tag/4.2.1)
+
+**Dependencies:**
+
+- chore(deps): bump eslint-plugin-jsdoc from 20.3.1 to 21.0.0 (#81)
+
 ## [4.2.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/4.2.0)
 
 **Fix:**
