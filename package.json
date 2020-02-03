@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-contactlab",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "description": "Contactlab ESLint configuration",
   "main": "index.js",
   "author": "Contactlab",
@@ -38,7 +38,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.15.0",
     "@typescript-eslint/parser": "^2.15.0",
-    "eslint-plugin-import": "github:contactlab/eslint-plugin-import",
+    "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsdoc": "^21.0.0"
   },
   "devDependencies": {
