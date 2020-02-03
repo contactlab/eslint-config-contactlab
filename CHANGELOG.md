@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.2.2](https://github.com/contactlab/eslint-config-contactlab/releases/tag/4.2.2)
+
+**Dependencies:**
+
+- Use official eslint-plugin-import (#90)
+
 ## [4.2.1](https://github.com/contactlab/eslint-config-contactlab/releases/tag/4.2.1)
 
 **Dependencies:**
