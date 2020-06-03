@@ -1,5 +1,11 @@
 # Changelog
 
+## [5.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/5.0.0)
+
+**Breaking:**
+
+- Upgrade to ESLint v7 (#94)
+
 ## [4.2.2](https://github.com/contactlab/eslint-config-contactlab/releases/tag/4.2.2)
 
 **Dependencies:**
