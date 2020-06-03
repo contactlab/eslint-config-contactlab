@@ -36,13 +36,8 @@ export = {
         }
       }
     ],
-    '@typescript-eslint/camelcase': [
-      'error',
-      {
-        properties: 'never'
-      }
-    ],
     '@typescript-eslint/consistent-type-definitions': 'error',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/explicit-function-return-type': [
       'error',
       {
