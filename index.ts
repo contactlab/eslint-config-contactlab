@@ -10,13 +10,9 @@ export = {
     sourceType: 'module'
   },
 
-  plugins: ['import'],
+  plugins: ['node', 'import'],
 
-  extends: [
-    'eslint:recommended',
-    'plugin:node/recommended',
-    'plugin:jsdoc/recommended'
-  ],
+  extends: ['eslint:recommended', 'plugin:jsdoc/recommended'],
 
   rules: {
     // --- ES6
