@@ -12,7 +12,11 @@ export = {
 
   plugins: ['import'],
 
-  extends: ['eslint:recommended', 'plugin:jsdoc/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:node/recommended',
+    'plugin:jsdoc/recommended'
+  ],
 
   rules: {
     // --- ES6
@@ -39,7 +43,6 @@ export = {
     'dot-notation': 'error',
     'eol-last': 'off',
     eqeqeq: 'error',
-    'global-require': 'error',
     'guard-for-in': 'error',
     'id-match': 'error',
     indent: 'off',
@@ -130,6 +133,10 @@ export = {
     'vars-on-top': 'error',
     'wrap-iife': ['error', 'inside'],
     'valid-typeof': 'off',
+
+    // --- Node
+    'node/global-require': 'error',
+    'node/no-unsupported-features/es-syntax': 'off',
 
     // --- Import
     'import/no-deprecated': 'error',
