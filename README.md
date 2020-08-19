@@ -1,6 +1,6 @@
 # eslint-config-contactlab
 
-[![Build Status](https://clab-dev.visualstudio.com/OSS/_apis/build/status/contactlab.eslint-config-contactlab?branchName=master)](https://clab-dev.visualstudio.com/OSS/_build/latest?definitionId=31&branchName=master)
+![Node CI](https://github.com/contactlab/eslint-config-contactlab/workflows/Node%20CI/badge.svg)
 
 ContactLab ESLint extensible and sharable configuration.
 
