@@ -6,7 +6,7 @@
   "author": "Contactlab",
   "license": "Apache-2.0",
   "repository": "contactlab/eslint-config-contactlab",
-  "homepage": "https://github.com/contactlab/eslint-config-contactlab#readme",
+  "homepage": "https://contactlab.github.io/eslint-config-contactlab",
   "bugs": "https://github.com/contactlab/eslint-config-contactlab/issues",
   "keywords": [
     "eslint",
