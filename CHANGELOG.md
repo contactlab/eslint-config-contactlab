@@ -1,5 +1,15 @@
 # Changelog
 
+## [6.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/6.0.0)
+
+**Dependencies:**
+
+- Upgrade eslint-plugin-import to ^2.22.1 (#98)
+- `[breaking]` Upgrade typescript to ^4.1.2 (#98)
+- `[breaking]` Upgrade @typescript-eslint/eslint-plugin to ^4.9.1 (#98)
+- `[breaking]` Upgrade @typescript-eslint/parser to ^4.9.1 (#98)
+- `[breaking]` Upgrade eslint-plugin-jsdoc to ^30.7.8 (#98)
+
 ## [5.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/5.0.0)
 
 **Breaking:**
