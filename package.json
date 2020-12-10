@@ -38,15 +38,15 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^3.0.0",
     "@typescript-eslint/parser": "^3.0.0",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsdoc": "^27.0.2",
     "eslint-plugin-node": "^11.1.0"
   },
   "devDependencies": {
     "@types/node": "^12.12.24",
     "eslint": "^7.0.0",
-    "husky": "^4.2.5",
-    "prettier": "^2.0.5",
+    "husky": "^4.3.5",
+    "prettier": "^2.2.1",
     "pretty-quick": "^2.0.1",
     "typescript": "^3.7.5"
   },
