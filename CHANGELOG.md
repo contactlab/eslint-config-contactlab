@@ -1,5 +1,11 @@
 # Changelog
 
+## [6.1.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/6.1.0)
+
+**Feature:**
+
+- Add Buildo eslint-plugin-fp-ts (#120)
+
 ## [6.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/6.0.0)
 
 **Dependencies:**
