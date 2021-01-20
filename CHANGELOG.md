@@ -1,5 +1,11 @@
 # Changelog
 
+## [6.2.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/6.2.0)
+
+**Dependencies:**
+
+- Bump eslint-plugin-jsdoc from 30.7.13 to 31.0.6 (#124)
+
 ## [6.1.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/6.1.0)
 
 **Feature:**
