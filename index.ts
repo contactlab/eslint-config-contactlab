@@ -12,11 +12,7 @@ export = {
 
   plugins: ['node', 'import'],
 
-  extends: [
-    'eslint:recommended',
-    'plugin:jsdoc/recommended',
-    'plugin:fp-ts/recommended'
-  ],
+  extends: ['eslint:recommended', 'plugin:jsdoc/recommended'],
 
   rules: {
     // --- ES6
@@ -178,13 +174,6 @@ export = {
     'jsdoc/require-returns': 'off',
     'jsdoc/require-returns-check': 'off',
     'jsdoc/require-returns-description': 'off',
-    'jsdoc/require-returns-type': 'off',
-
-    // --- fp-ts
-    'fp-ts/no-module-imports': 'off',
-    'fp-ts/no-redundant-flow': 'error',
-    'fp-ts/prefer-traverse': 'error',
-    'fp-ts/prefer-chain': 'error',
-    'fp-ts/prefer-bimap': 'error'
+    'jsdoc/require-returns-type': 'off'
   }
 };

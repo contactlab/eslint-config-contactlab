@@ -12,10 +12,12 @@ export = {
   extends: [
     './index.js',
     'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/recommended',
+    'plugin:fp-ts/recommended'
   ],
 
   rules: {
+    // --- Typescript
     '@typescript-eslint/array-type': [
       'error',
       {
@@ -103,6 +105,13 @@ export = {
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-function-type': 'off',
     '@typescript-eslint/semi': ['error', 'always'],
-    '@typescript-eslint/unified-signatures': 'error'
+    '@typescript-eslint/unified-signatures': 'error',
+
+    // --- fp-ts
+    'fp-ts/no-module-imports': 'off',
+    'fp-ts/no-redundant-flow': 'error',
+    'fp-ts/prefer-traverse': 'error',
+    'fp-ts/prefer-chain': 'error',
+    'fp-ts/prefer-bimap': 'error'
   }
 };
