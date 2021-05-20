@@ -1,5 +1,19 @@
 # Changelog
 
+## [6.2.1](https://github.com/contactlab/eslint-config-contactlab/releases/tag/6.2.1)
+
+**Fix:**
+
+- Move fp-ts plugin in typescript config only (#209)
+
+**Dependencies:**
+
+- Bump eslint-plugin-jsdoc from 31.6.1 to 34.6.3 (#146, #195, #208)
+- [Security] Bump hosted-git-info from 2.8.8 to 2.8.9 (#203)
+- Bump eslint-plugin-fp-ts from 0.1.14 to 0.2.1 (#148)
+- Bump husky from 4.3.8 to 5.0.9 (#145)
+- use node v14 (#144)
+
 ## [6.2.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/6.2.0)
 
 **Dependencies:**
