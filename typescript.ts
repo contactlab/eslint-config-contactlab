@@ -17,6 +17,7 @@ export = {
   ],
 
   rules: {
+    "no-shadow": "off",
     // --- Typescript
     '@typescript-eslint/array-type': [
       'error',
@@ -95,6 +96,7 @@ export = {
       {ignoreParameters: true}
     ],
     '@typescript-eslint/no-parameter-properties': 'off',
+    "@typescript-eslint/no-shadow": ["error"],
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
