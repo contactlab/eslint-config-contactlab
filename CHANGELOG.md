@@ -1,5 +1,15 @@
 # Changelog
 
+## [6.3.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/6.3.0)
+
+**Feature:**
+
+- Disable the `no-shadow` and enable `@typescript-eslint/no-shadow` (#217)
+
+**Internal:**
+
+- drop tests for nodejs v15 in favor of v16 (#219)
+
 ## [6.2.1](https://github.com/contactlab/eslint-config-contactlab/releases/tag/6.2.1)
 
 **Fix:**
