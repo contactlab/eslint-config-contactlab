@@ -17,7 +17,9 @@ export = {
   ],
 
   rules: {
+    // --- ES
     'no-shadow': 'off', // Disable basic rule in favor of `@typescript-eslint/no-shadow`
+
     // --- Typescript
     '@typescript-eslint/array-type': [
       'error',
