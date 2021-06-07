@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-contactlab",
-  "version": "6.3.0",
+  "version": "6.3.1",
   "description": "Contactlab ESLint configuration",
   "main": "index.js",
   "author": "Contactlab",

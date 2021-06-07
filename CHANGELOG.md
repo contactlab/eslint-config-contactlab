@@ -1,5 +1,15 @@
 # Changelog
 
+## [6.3.1](https://github.com/contactlab/eslint-config-contactlab/releases/tag/6.3.1)
+
+**Feature:**
+
+- switch off JSDoc no-multi-asterisks rule (#233)
+
+**Dependencies:**
+
+- Bump eslint-plugin-jsdoc from 34.8.2 to 35.1.0 (#222)
+
 ## [6.3.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/6.3.0)
 
 **Feature:**
