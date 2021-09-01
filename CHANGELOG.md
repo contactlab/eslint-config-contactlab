@@ -1,5 +1,19 @@
 # Changelog
 
+## [7.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/7.0.0)
+
+**Breaking:**
+
+**Require Node ^12.20 because of:**
+
+- Bump eslint-plugin-jsdoc from 35.4.5 to 36.0.6 (#273)
+
+**Dependencies:**
+
+- Bump typescript from 4.3.5 to 4.4.2 (#293)
+- [Security] Bump path-parse from 1.0.6 to 1.0.7 (#280)
+- [Security] Bump glob-parent from 5.1.1 to 5.1.2 (#235)
+
 ## [6.3.1](https://github.com/contactlab/eslint-config-contactlab/releases/tag/6.3.1)
 
 **Feature:**
