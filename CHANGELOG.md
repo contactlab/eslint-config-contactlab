@@ -1,5 +1,16 @@
 # Changelog
 
+## [8.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/8.0.0)
+
+**Breaking:**
+
+- Upgrade to ESLint v8 (#330)
+
+**Dependencies:**
+
+- Bump eslint-plugin-jsdoc from 36.1.1 to 37.0.0 (#325)
+- [Security] Bump ansi-regex from 5.0.0 to 5.0.1 (#309)
+
 ## [7.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/7.0.0)
 
 **Breaking:**
