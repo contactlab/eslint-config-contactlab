@@ -1,5 +1,15 @@
 # Changelog
 
+## [8.1.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/8.1.0)
+
+**Feature:**
+
+- Ignore unused elements of destructured arrays which start with `_` (#447)
+
+**Dependencies:**
+
+- [Security] Bump minimist from 1.2.5 to 1.2.6 (#441)
+
 ## [8.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/8.0.0)
 
 **Breaking:**
