@@ -5,6 +5,8 @@
 
 import * as path from 'path';
 
-export function test(): string {
-  return path.join('this', 'is', 'a', 'simple', 'test');
+export function test(_unused: unknown, is = 'is'): string {
+  const [_, a, simple, Test] = ['not', 'a', 'simple', 'test'];
+
+  return path.join('this', is, a, simple, Test);
 }

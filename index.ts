@@ -90,7 +90,8 @@ export = {
     'no-unused-vars': [
       'error',
       {
-        argsIgnorePattern: '^_$'
+        argsIgnorePattern: '^_',
+        destructuredArrayIgnorePattern: '^_'
       }
     ],
     'no-useless-call': 'error',
