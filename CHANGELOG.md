@@ -1,5 +1,15 @@
 # Changelog
 
+## [9.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/9.0.0)
+
+**Breaking:**
+
+- Drop Node v12 + add Node v18 to tests matrix (#493)
+
+**Dependencies:**
+
+- Bump eslint-plugin-jsdoc from 38.1.6 to 39.3.0 (#488)
+
 ## [8.1.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/8.1.0)
 
 **Feature:**
