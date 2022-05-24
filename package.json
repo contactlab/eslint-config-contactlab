@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-contactlab",
-  "version": "8.1.0",
+  "version": "9.0.0",
   "description": "Contactlab ESLint configuration",
   "main": "index.js",
   "author": "Contactlab",
@@ -15,7 +15,7 @@
     "contactlab"
   ],
   "engines": {
-    "node": ">= 12.20",
+    "node": ">= 14",
     "npm": ">= 6.13"
   },
   "files": [
