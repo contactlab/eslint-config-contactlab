@@ -46,7 +46,7 @@
     "eslint-plugin-node": "^11.1.0"
   },
   "devDependencies": {
-    "@types/node": "^16.11.12",
+    "@types/node": "^18.0.0",
     "eslint": "^8.0.0",
     "husky": "^8.0.0",
     "prettier": "^2.2.1",
