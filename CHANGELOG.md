@@ -1,5 +1,16 @@
 # Changelog
 
+## [10.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/10.0.0)
+
+**Breaking:**
+
+- Drop support for Node v14 (#769)
+
+**Dependencies:**
+
+- Bump eslint-plugin-jsdoc from 39.8.0 to 46.2.4 (#682, #730, #765)
+- [Security] Bump json5 from 1.0.1 to 1.0.2 (#650)
+
 ## [9.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/9.0.0)
 
 **Breaking:**
