@@ -74,6 +74,12 @@ TypeScript configuration the `plugin:@typescript-eslint/recommended` rules.
 
 ## Older Nodejs versions
 
+### v14.x
+
+Since **v10.0.0** `eslint-config-contactlab` supports **Nodejs version >= 16.x**
+
+If you need support for **previous versions** please use **v9.0.0**
+
 ### v12.x
 
 Since **v6.0.0** `eslint-config-contactlab` supports **Nodejs version >= 14.x**
