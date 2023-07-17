@@ -39,7 +39,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "^5.17.0",
-    "@typescript-eslint/typescript-estree": "^5.17.0",
+    "@typescript-eslint/typescript-estree": "^6.0.0",
     "eslint-plugin-fp-ts": "^0.3.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsdoc": "^46.2.4",
