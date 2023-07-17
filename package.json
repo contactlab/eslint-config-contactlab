@@ -37,7 +37,7 @@
     "typescript": "^5.0.2"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^5.17.0",
     "@typescript-eslint/typescript-estree": "^5.17.0",
     "eslint-plugin-fp-ts": "^0.3.0",
