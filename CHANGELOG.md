@@ -1,5 +1,11 @@
 # Changelog
 
+## [11.1.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/11.1.0)
+
+**Feature:**
+
+- Disable `no-unsafe-*` rules for tests (#807)
+
 ## [11.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/11.0.0)
 
 **Breaking:**
