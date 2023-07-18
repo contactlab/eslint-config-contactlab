@@ -1,5 +1,15 @@
 # Changelog
 
+## [11.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/11.0.0)
+
+**Breaking:**
+
+- Upgrade `typescript-eslint` to v6 (#803)
+
+**Dependencies:**
+
+- [Security] Bump semver from 6.3.0 to 6.3.1 (#797)
+
 ## [10.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/10.0.0)
 
 **Breaking:**
