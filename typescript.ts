@@ -142,5 +142,20 @@ export = {
     'fp-ts/prefer-traverse': 'error',
     'fp-ts/prefer-chain': 'error',
     'fp-ts/prefer-bimap': 'error'
-  }
+  },
+
+  // Disable no-unsafe rules for tests files
+  overrides: [
+    {
+      files: ['**/test/**/*.ts*', '**/*.{test,spec}.ts*'],
+      rules: {
+        '@typescript-eslint/no-unsafe-argument': 'off',
+        '@typescript-eslint/no-unsafe-assignment': 'off',
+        '@typescript-eslint/no-unsafe-call': 'off',
+        '@typescript-eslint/no-unsafe-declaration-merging': 'off',
+        '@typescript-eslint/no-unsafe-member-access': 'off',
+        '@typescript-eslint/no-unsafe-return': 'off'
+      }
+    }
+  ]
 };
