@@ -176,6 +176,7 @@ export = {
     'jsdoc/require-returns': 'off',
     'jsdoc/require-returns-check': 'off',
     'jsdoc/require-returns-description': 'off',
-    'jsdoc/require-returns-type': 'off'
+    'jsdoc/require-returns-type': 'off',
+    'jsdoc/tag-lines': ['warn', 'any', {startLines: 1}]
   }
 };
