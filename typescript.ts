@@ -6,13 +6,16 @@ export = {
   },
 
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: true
+  },
 
   plugins: ['@typescript-eslint'],
 
   extends: [
     './index.js',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-type-checked',
+    'plugin:@typescript-eslint/stylistic-type-checked',
     'plugin:fp-ts/recommended'
   ],
 
@@ -80,6 +83,12 @@ export = {
         ]
       }
     ],
+    '@typescript-eslint/no-duplicate-type-constituents': [
+      'error',
+      {
+        ignoreIntersections: true
+      }
+    ],
     '@typescript-eslint/no-empty-function': 'error',
     '@typescript-eslint/no-empty-interface': [
       'error',
@@ -95,10 +104,23 @@ export = {
     ],
     '@typescript-eslint/no-inferrable-types': [
       'error',
-      {ignoreParameters: true}
+      {
+        ignoreParameters: true
+      }
     ],
-    '@typescript-eslint/no-parameter-properties': 'off',
+    '@typescript-eslint/no-misused-promises': [
+      'error',
+      {
+        checksVoidReturn: {arguments: false, attributes: false}
+      }
+    ],
     '@typescript-eslint/no-shadow': 'error',
+    '@typescript-eslint/no-unsafe-argument': 'warn',
+    '@typescript-eslint/no-unsafe-assignment': 'warn',
+    '@typescript-eslint/no-unsafe-call': 'warn',
+    '@typescript-eslint/no-unsafe-declaration-merging': 'warn',
+    '@typescript-eslint/no-unsafe-member-access': 'warn',
+    '@typescript-eslint/no-unsafe-return': 'warn',
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
@@ -109,7 +131,9 @@ export = {
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-function-type': 'off',
+    '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/semi': ['error', 'always'],
+    '@typescript-eslint/unbound-method': 'off',
     '@typescript-eslint/unified-signatures': 'error',
 
     // --- fp-ts

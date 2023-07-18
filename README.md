@@ -70,7 +70,7 @@ module.exports = {
 
 ES configuration already extends the default `eslint:recommended` rules.
 
-TypeScript configuration the `plugin:@typescript-eslint/recommended` rules.
+TypeScript configuration the `@typescript-eslint/recommended-type-checked` and `@typescript-eslint/stylistic-type-checked` rules.
 
 ## Older Nodejs versions
 
