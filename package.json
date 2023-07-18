@@ -25,8 +25,8 @@
   "scripts": {
     "prepare": "husky install",
     "pretest": "npm run build",
-    "test:es": "eslint ./test/. -c ./test/_config.es.js --ext .js,.jsx",
-    "test:ts": "eslint ./test/. -c ./test/_config.ts.js --ext .ts,.tsx",
+    "test:es": "eslint ./test/. -c ./test/_config.es.json --ext .js,.jsx",
+    "test:ts": "eslint ./test/. -c ./test/_config.ts.json --ext .ts,.tsx",
     "test": "npm run test:es && npm run test:ts",
     "prebuild": "rm -f ./index.js ./typescript.js",
     "build": "tsc",
