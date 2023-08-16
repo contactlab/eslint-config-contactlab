@@ -143,6 +143,11 @@ export = {
         groups: ['builtin', 'external', 'parent', ['sibling', 'index']],
         pathGroups: [
           {
+            pattern: '@/**',
+            group: 'external',
+            position: 'after'
+          },
+          {
             pattern: './style.*',
             group: 'index',
             position: 'after'
