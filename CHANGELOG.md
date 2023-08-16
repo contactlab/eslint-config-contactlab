@@ -1,5 +1,11 @@
 # Changelog
 
+## [11.2.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/11.2.0)
+
+**Feature:**
+
+- Handle `@/**` as "external" in `import/order` rule #829
+
 ## [11.1.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/11.1.0)
 
 **Feature:**
