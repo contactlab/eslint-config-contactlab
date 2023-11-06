@@ -1,10 +1,16 @@
 # Changelog
 
+## [12.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/12.0.0)
+
+**Breaking:**
+
+- Remove deprecated rules (#892)
+
 ## [11.2.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/11.2.0)
 
 **Feature:**
 
-- Handle `@/**` as "external" in `import/order` rule #829
+- Handle `@/**` as "external" in `import/order` rule (#829)
 
 ## [11.1.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/11.1.0)
 
