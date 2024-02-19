@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@stylistic/eslint-plugin-js": "^1.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@typescript-eslint/typescript-estree": "^6.0.0",
     "eslint-plugin-fp-ts": "^0.3.0",
