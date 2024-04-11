@@ -23,7 +23,7 @@
     "typescript.js"
   ],
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "pretest": "npm run build",
     "test:es": "eslint ./test/. -c ./test/_config.es.json --ext .js,.jsx",
     "test:ts": "eslint ./test/. -c ./test/_config.ts.json --ext .ts,.tsx",
@@ -49,7 +49,7 @@
   "devDependencies": {
     "@types/node": "^20.5.7",
     "eslint": "^8.0.0",
-    "husky": "^8.0.0",
+    "husky": "^9.0.11",
     "lint-staged": "^15.0.1",
     "prettier": "^3.0.0",
     "typescript": "^5.0.2"
