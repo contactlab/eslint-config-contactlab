@@ -23,7 +23,7 @@
     "typescript.js"
   ],
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "pretest": "npm run build",
     "test:es": "eslint ./test/. -c ./test/_config.es.json --ext .js,.jsx",
     "test:ts": "eslint ./test/. -c ./test/_config.ts.json --ext .ts,.tsx",
