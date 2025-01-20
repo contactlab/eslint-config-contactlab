@@ -41,6 +41,7 @@
     "@typescript-eslint/eslint-plugin": "^8.20.0",
     "@typescript-eslint/parser": "^8.20.0",
     "@typescript-eslint/typescript-estree": "^8.20.0",
+    "eslint-plugin-fp-ts": "^0.3.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsdoc": "^50.6.2",
     "eslint-plugin-node": "^11.1.0"
