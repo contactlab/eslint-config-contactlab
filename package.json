@@ -15,8 +15,8 @@
     "contactlab"
   ],
   "engines": {
-    "node": ">= 16",
-    "npm": ">= 6.13"
+    "node": ">= 18.18",
+    "npm": ">= 9.8.1"
   },
   "files": [
     "index.js",
@@ -33,22 +33,21 @@
     "prepublishOnly": "npm test && npm run build"
   },
   "peerDependencies": {
-    "eslint": "^8.0.0",
+    "eslint": "^9.0.0",
     "typescript": "^5.0.2"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin-js": "^1.0.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.0",
-    "@typescript-eslint/parser": "^7.6.0",
-    "@typescript-eslint/typescript-estree": "^7.6.0",
-    "eslint-plugin-fp-ts": "^0.3.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsdoc": "^48.0.2",
+    "@stylistic/eslint-plugin-js": "^2.13.0",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "@typescript-eslint/typescript-estree": "^8.20.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsdoc": "^50.6.2",
     "eslint-plugin-node": "^11.1.0"
   },
   "devDependencies": {
     "@types/node": "^20.5.7",
-    "eslint": "^8.0.0",
+    "eslint": "^9.18.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.0.1",
     "prettier": "^3.0.0",
