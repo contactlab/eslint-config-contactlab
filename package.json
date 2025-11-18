@@ -15,7 +15,7 @@
     "contactlab"
   ],
   "engines": {
-    "node": ">= 18.18",
+    "node": ">= 20.x",
     "npm": ">= 9.8.1"
   },
   "files": [
