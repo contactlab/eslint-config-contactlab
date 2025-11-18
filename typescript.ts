@@ -21,6 +21,14 @@ export = {
 
   rules: {
     // --- ES
+    indent: [
+      'error',
+      2,
+      {
+        SwitchCase: 1,
+        VariableDeclarator: {var: 1, let: 2, const: 3}
+      }
+    ],
     'no-shadow': 'off', // Disable basic rule in favor of `@typescript-eslint/no-shadow`
 
     // --- Typescript
@@ -30,34 +38,12 @@ export = {
         default: 'array-simple'
       }
     ],
-    '@typescript-eslint/ban-types': [
-      'error',
-      {
-        types: {
-          Object: 'Avoid using the `Object` type. Did you mean `object`?',
-          Function:
-            'Avoid using the `Function` type. Prefer a specific function type, like `() => void`.',
-          Boolean: 'Avoid using the `Boolean` type. Did you mean `boolean`?',
-          Number: 'Avoid using the `Number` type. Did you mean `number`?',
-          String: 'Avoid using the `String` type. Did you mean `string`?',
-          Symbol: 'Avoid using the `Symbol` type. Did you mean `symbol`?'
-        }
-      }
-    ],
     '@typescript-eslint/consistent-type-definitions': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/explicit-function-return-type': [
       'error',
       {
         allowExpressions: true
-      }
-    ],
-    '@typescript-eslint/indent': [
-      'error',
-      2,
-      {
-        VariableDeclarator: 2,
-        SwitchCase: 1
       }
     ],
     '@typescript-eslint/interface-name-prefix': 'off',
@@ -96,6 +82,7 @@ export = {
         allowSingleExtends: true
       }
     ],
+    '@typescript-eslint/no-empty-object-type': 'error',
     '@typescript-eslint/no-explicit-any': [
       'error',
       {
@@ -119,6 +106,7 @@ export = {
     '@typescript-eslint/no-unsafe-assignment': 'warn',
     '@typescript-eslint/no-unsafe-call': 'warn',
     '@typescript-eslint/no-unsafe-declaration-merging': 'warn',
+    '@typescript-eslint/no-unsafe-function-type': 'error',
     '@typescript-eslint/no-unsafe-member-access': 'warn',
     '@typescript-eslint/no-unsafe-return': 'warn',
     '@typescript-eslint/no-unused-vars': [
@@ -129,10 +117,12 @@ export = {
       }
     ],
     '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/no-wrapper-object-types': 'error',
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-function-type': 'off',
     '@typescript-eslint/restrict-template-expressions': 'off',
-    '@typescript-eslint/semi': ['error', 'always'],
+    // next rule is now deprecated, see: https://eslint.style/guide/migration
+    //'@typescript-eslint/semi': ['error', 'always'],
     '@typescript-eslint/unbound-method': 'off',
     '@typescript-eslint/unified-signatures': 'error',
 

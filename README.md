@@ -74,6 +74,12 @@ TypeScript configuration the `@typescript-eslint/recommended-type-checked` and `
 
 ## Older Nodejs versions
 
+### v16.x, v18.x
+
+Since **v13.0.0** `eslint-config-contactlab` supports **Nodejs version >= 20.x**
+
+If you need support for **previous versions** please use **v12.0.0**
+
 ### v14.x
 
 Since **v10.0.0** `eslint-config-contactlab` supports **Nodejs version >= 16.x**

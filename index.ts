@@ -10,7 +10,7 @@ export = {
     sourceType: 'module'
   },
 
-  plugins: ['@stylistic/js', 'node', 'import'],
+  plugins: ['@stylistic', 'n', 'import'],
 
   extends: ['eslint:recommended', 'plugin:jsdoc/recommended'],
 
@@ -98,12 +98,21 @@ export = {
     'valid-typeof': 'off',
 
     // --- Stylistic
-    '@stylistic/js/spaced-comment': 'error',
-    '@stylistic/js/wrap-iife': ['error', 'inside'],
+    '@stylistic/indent': [
+      'error',
+      2,
+      {
+        VariableDeclarator: 2,
+        SwitchCase: 1
+      }
+    ],
+    '@stylistic/semi': ['error', 'always'],
+    '@stylistic/spaced-comment': 'error',
+    '@stylistic/wrap-iife': ['error', 'inside'],
 
     // --- Node
-    'node/global-require': 'error',
-    'node/no-unsupported-features/es-syntax': 'off',
+    'n/global-require': 'error',
+    'n/no-unsupported-features/es-syntax': 'off',
 
     // --- Import
     'import/no-deprecated': 'error',

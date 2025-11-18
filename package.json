@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-contactlab",
-  "version": "12.0.0",
+  "version": "13.0.0",
   "description": "Contactlab ESLint configuration",
   "main": "index.js",
   "author": "Contactlab",
@@ -15,8 +15,8 @@
     "contactlab"
   ],
   "engines": {
-    "node": ">= 16",
-    "npm": ">= 6.13"
+    "node": ">= 20.x",
+    "npm": ">= 9.8.1"
   },
   "files": [
     "index.js",
@@ -25,34 +25,35 @@
   "scripts": {
     "prepare": "husky",
     "pretest": "npm run build",
-    "test:es": "eslint ./test/. -c ./test/_config.es.json --ext .js,.jsx",
-    "test:ts": "eslint ./test/. -c ./test/_config.ts.json --ext .ts,.tsx",
+    "test:es": "ESLINT_USE_FLAT_CONFIG=false eslint ./test/. -c ./test/_config.es.json --ext .js,.jsx",
+    "test:ts": "ESLINT_USE_FLAT_CONFIG=false eslint ./test/. -c ./test/_config.ts.json --ext .ts,.tsx",
     "test": "npm run test:es && npm run test:ts",
     "prebuild": "rm -f ./index.js ./typescript.js",
     "build": "tsc",
     "prepublishOnly": "npm test && npm run build"
   },
   "peerDependencies": {
-    "eslint": "^8.0.0",
-    "typescript": "^5.0.2"
+    "eslint": "^9.39.1",
+    "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin-js": "^1.0.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.0",
-    "@typescript-eslint/parser": "^7.6.0",
-    "@typescript-eslint/typescript-estree": "^7.6.0",
-    "eslint-plugin-fp-ts": "^0.3.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsdoc": "^48.0.2",
-    "eslint-plugin-node": "^11.1.0"
+    "@stylistic/eslint-plugin": "^5.6.0",
+    "@stylistic/eslint-plugin-js": "^4.4.1",
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
+    "@typescript-eslint/parser": "^8.47.0",
+    "@typescript-eslint/typescript-estree": "^8.47.0",
+    "eslint-plugin-fp-ts": "^0.4.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsdoc": "^61.2.1",
+    "eslint-plugin-n": "^17.23.1"
   },
   "devDependencies": {
-    "@types/node": "^20.5.7",
-    "eslint": "^8.0.0",
+    "@types/node": "^20.19.25",
+    "eslint": "^9.39.1",
     "husky": "^9.0.11",
-    "lint-staged": "^15.0.1",
-    "prettier": "^3.0.0",
-    "typescript": "^5.0.2"
+    "lint-staged": "^16.2.6",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3"
   },
   "lint-staged": {
     "*": "prettier --ignore-unknown --write"
