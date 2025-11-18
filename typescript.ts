@@ -21,6 +21,14 @@ export = {
 
   rules: {
     // --- ES
+    indent: [
+      'error',
+      2,
+      {
+        SwitchCase: 1,
+        VariableDeclarator: {var: 1, let: 2, const: 3}
+      }
+    ],
     'no-shadow': 'off', // Disable basic rule in favor of `@typescript-eslint/no-shadow`
 
     // --- Typescript
@@ -93,20 +101,6 @@ export = {
         checksVoidReturn: {arguments: false, attributes: false}
       }
     ],
-    '@typescript-eslint/no-restricted-types': [
-      'error',
-      {
-        types: {
-          Object: 'Avoid using the `Object` type. Did you mean `object`?',
-          Function:
-            'Avoid using the `Function` type. Prefer a specific function type, like `() => void`.',
-          Boolean: 'Avoid using the `Boolean` type. Did you mean `boolean`?',
-          Number: 'Avoid using the `Number` type. Did you mean `number`?',
-          String: 'Avoid using the `String` type. Did you mean `string`?',
-          Symbol: 'Avoid using the `Symbol` type. Did you mean `symbol`?'
-        }
-      }
-    ],
     '@typescript-eslint/no-shadow': 'error',
     '@typescript-eslint/no-unsafe-argument': 'warn',
     '@typescript-eslint/no-unsafe-assignment': 'warn',
@@ -127,6 +121,8 @@ export = {
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-function-type': 'off',
     '@typescript-eslint/restrict-template-expressions': 'off',
+    // next rule is now deprecated, see: https://eslint.style/guide/migration
+    //'@typescript-eslint/semi': ['error', 'always'],
     '@typescript-eslint/unbound-method': 'off',
     '@typescript-eslint/unified-signatures': 'error',
 
