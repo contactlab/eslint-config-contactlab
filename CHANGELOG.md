@@ -1,5 +1,11 @@
 # Changelog
 
+## [13.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/13.0.0)
+
+**Breaking:**
+
+- Require node >= 18.18
+
 ## [12.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/12.0.0)
 
 **Breaking:**
