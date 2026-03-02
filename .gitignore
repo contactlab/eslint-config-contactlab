@@ -1,5 +1,5 @@
 node_modules
 dist
 *.log
-index.js
-typescript.js
+.DS_Store
+Thumbs.db

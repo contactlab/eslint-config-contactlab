@@ -2,7 +2,7 @@
   "name": "eslint-config-contactlab",
   "version": "13.0.0",
   "description": "Contactlab ESLint configuration",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "author": "Contactlab",
   "license": "Apache-2.0",
   "repository": "contactlab/eslint-config-contactlab",
@@ -18,17 +18,21 @@
     "node": ">= 20.x",
     "npm": ">= 9.8.1"
   },
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "types": "./dist/index.d.ts",
   "files": [
-    "index.js",
-    "typescript.js"
+    "dist"
   ],
   "scripts": {
     "prepare": "husky",
     "pretest": "npm run build",
-    "test:es": "ESLINT_USE_FLAT_CONFIG=false eslint ./test/. -c ./test/_config.es.json --ext .js,.jsx",
-    "test:ts": "ESLINT_USE_FLAT_CONFIG=false eslint ./test/. -c ./test/_config.ts.json --ext .ts,.tsx",
+    "test:es": "eslint ./test/. --ext .js,.jsx",
+    "test:ts": "eslint ./test/. --ext .ts,.tsx",
     "test": "npm run test:es && npm run test:ts",
-    "prebuild": "rm -f ./index.js ./typescript.js",
+    "prebuild": "rm -f ./dist/*.js ./dist/*.d.ts",
     "build": "tsc",
     "prepublishOnly": "npm test && npm run build"
   },
@@ -39,9 +43,6 @@
   "dependencies": {
     "@stylistic/eslint-plugin": "^5.6.0",
     "@stylistic/eslint-plugin-js": "^4.4.1",
-    "@typescript-eslint/eslint-plugin": "^8.47.0",
-    "@typescript-eslint/parser": "^8.47.0",
-    "@typescript-eslint/typescript-estree": "^8.47.0",
     "eslint-plugin-fp-ts": "^0.5.0",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsdoc": "^61.2.1",
@@ -53,7 +54,8 @@
     "husky": "^9.0.11",
     "lint-staged": "^16.2.6",
     "prettier": "^3.6.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1"
   },
   "lint-staged": {
     "*": "prettier --ignore-unknown --write"
