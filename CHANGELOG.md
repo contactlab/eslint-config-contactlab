@@ -1,5 +1,24 @@
 # Changelog
 
+**Breaking:**
+
+- Migrated to ESLint native flat config (ESLint v9+ required).
+  Legacy `.eslintrc` configuration and `ESLINT_USE_FLAT_CONFIG=false` are no longer supported.
+
+- The package is now ESM-only (`"type": "module"`).
+  CommonJS support has been removed.
+
+- Switched to NodeNext module resolution.
+
+**Feature:**
+
+- Refactored TypeScript build configuration.
+- Compiled files are now emitted to `dist/`.
+
+**Internal:**
+
+- Dropped legacy test configuration files.
+
 ## [13.0.0](https://github.com/contactlab/eslint-config-contactlab/releases/tag/13.0.0)
 
 **Breaking:**

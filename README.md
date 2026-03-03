@@ -66,11 +66,31 @@ module.exports = {
 };
 ```
 
+### ESLint Flat Config
+
+```js
+// For projects using ESLint flat config (eslint.config.js), include the config directly:
+
+import contactlab from 'eslint-config-contactlab';
+// or, if you only want TypeScript rules:
+// import typescriptConfig from 'eslint-config-contactlab/dist/typescript.js';
+
+export default [...contactlab];
+```
+
+This replaces the old .eslintrc "extends": "contactlab" approach.
+
+> ⚡ Tip: When migrating to ESLint flat config, replace `"extends": "contactlab"` with `import contactlab from 'eslint-config-contactlab';` in your `eslint.config.js`.
+
+See the [ESlint config docs](https://eslint.org/docs/latest/use/configure/migration-guide) for more information.
+
 ## Rules
 
 ES configuration already extends the default `eslint:recommended` rules.
 
 TypeScript configuration the `@typescript-eslint/recommended-type-checked` and `@typescript-eslint/stylistic-type-checked` rules.
+
+ESLint Flat Config Type-aware TypeScript rules require a valid `parserOptions.project` (tsconfig.eslint.json by convention). Without it, only syntax-only rules run.
 
 ## Older Nodejs versions
 
