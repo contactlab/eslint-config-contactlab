@@ -1,5 +1,7 @@
 # Changelog
 
+## [Unreleased]
+
 **Breaking:**
 
 - Migrated to ESLint native flat config (ESLint v9+ required).

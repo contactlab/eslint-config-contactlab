@@ -90,7 +90,7 @@ ES configuration already extends the default `eslint:recommended` rules.
 
 TypeScript configuration the `@typescript-eslint/recommended-type-checked` and `@typescript-eslint/stylistic-type-checked` rules.
 
-ESLint Flat Config Type-aware TypeScript rules require a valid `parserOptions.project` (tsconfig.eslint.json by convention). Without it, only syntax-only rules run.
+ESLint Flat Config type-checking TypeScript rules require a valid `parserOptions.project` (tsconfig.eslint.json by convention).
 
 ## Older Nodejs versions
 
