@@ -1,19 +1,19 @@
 import type {Linter} from 'eslint';
 import fpTsPlugin from 'eslint-plugin-fp-ts';
-import tseslint from 'typescript-eslint';
+import tsSlint from 'typescript-eslint';
 
 const config: Linter.Config[] = [
-  // 1️⃣ Base TS (non type-checked)
-  {
-    files: ['**/*.ts', '**/*.tsx'],
-    ...tseslint.configs.recommended[0]
-  },
+  // Recommended TS rules, applied only to TS files
+  ...tsSlint.configs.recommendedTypeChecked.map(c => ({
+    ...c,
+    files: ['**/*.ts', '**/*.tsx']
+  })),
 
-  // 2️⃣ Type-aware SOLO per TS
+  // Custom TS rules, applied only to TS files
   {
     files: ['**/*.ts', '**/*.tsx'],
-    ...tseslint.configs.recommendedTypeChecked[0],
     languageOptions: {
+      parser: tsSlint.parser,
       parserOptions: {
         project: './tsconfig.eslint.json',
         tsconfigRootDir: process.cwd()
@@ -33,9 +33,9 @@ const config: Linter.Config[] = [
         }
       ],
       'no-shadow': 'off',
-      '@typescript-eslint/no-shadow': 'error',
 
-      // tutte le regole TS
+      // TS rules
+      '@typescript-eslint/no-shadow': 'error',
       '@typescript-eslint/array-type': ['error', {default: 'array-simple'}],
       '@typescript-eslint/consistent-type-definitions': 'error',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
@@ -98,7 +98,7 @@ const config: Linter.Config[] = [
     }
   },
 
-  // 3️⃣ Overrides test TS
+  // Overrides test TS
   {
     files: ['**/test/**/*.ts', '**/*.{test,spec}.ts'],
     rules: {
