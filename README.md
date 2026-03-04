@@ -68,9 +68,9 @@ module.exports = {
 
 ### ESLint Flat Config
 
-```js
-// For projects using ESLint flat config (eslint.config.js), include the config directly:
+For projects using ESLint flat config (eslint.config.js), include the config directly:
 
+```js
 import contactlab from 'eslint-config-contactlab';
 // or, if you only want TypeScript rules:
 // import typescriptConfig from 'eslint-config-contactlab/dist/typescript.js';
@@ -78,9 +78,7 @@ import contactlab from 'eslint-config-contactlab';
 export default [...contactlab];
 ```
 
-This replaces the old .eslintrc "extends": "contactlab" approach.
-
-> ⚡ Tip: When migrating to ESLint flat config, replace `"extends": "contactlab"` with `import contactlab from 'eslint-config-contactlab';` in your `eslint.config.js`.
+This replaces the old .eslintrc `"extends": "contactlab"` approach.
 
 See the [ESlint config docs](https://eslint.org/docs/latest/use/configure/migration-guide) for more information.
 
